@@ -4,7 +4,7 @@
 ## Оглавление
 [1. Описание проекта] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 
-[2. Какую задачу решаем?] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BA%D0%B0%D0%BA%D1%83%D1%8E-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83-%D1%80%D0%B5%D1%88%D0%B0%D0%B5%D0%BC)
+[2. Цель и задачи проекта] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D1%86%D0%B5%D0%BB%D1%8C-%D0%B8-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 
 [3. Описание данных:] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
 
@@ -18,8 +18,13 @@
 
 :arrow_up: [к оглавнению] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
-### Какую задачу решаем?
-Учитывая информацию, связанную с кредитом человека, создана модель машинного обучения, которая может классифицировать кредитный рейтинг.
+### Цель и задачи проекта
+Цель - предсказание кредитного рейтинга клиентов компании. 
+
+Задачи:
+1. Очистка и подготовка датасета к моделированию.
+2. Отбор признаков, значимых для построения модели.
+3. Учитывая информацию, связанную с кредитом человека, создать модель машинного обучения, которая может классифицировать кредитный рейтинг.
 
 **Метрика**
 В качестве метрики качества модели использовалась Accuracy - доля правильных ответов алгоритма.
