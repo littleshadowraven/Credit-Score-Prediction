@@ -1,5 +1,6 @@
 # Credit-Score-Prediction
 Предсказание кредитного рейтинга клиентов банка на kaggle: https://www.kaggle.com/datasets/parisrohan/credit-score-classification
+
 Ноутбук на kaggle размещен по сслыке https://www.kaggle.com/code/mia1610/credit-score-classification-randomforest
 
 ## Оглавление
