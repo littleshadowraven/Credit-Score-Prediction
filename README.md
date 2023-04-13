@@ -78,16 +78,19 @@
     5.5 Наивные методы Байеса
     5.6. AdaBoost
     5.7. GridSearchCV
+  6. Optuna
+    6.1 RandomForestClassifire
+    6.2 CatBoostClassifire
 
 :arrow_up: [к оглавнению] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
 
 ### Результаты
-Результатом является оптимизации гиперпараметров RandomForestClassifier с помощью поиска по сетке GridSearchCV, лучшие результы показала следующая модель:
+Результатом является оптимизации гиперпараметров RandomForestClassifier с помощью Optuna, лучшие результы показала следующая модель:
 
-RandomForestClassifier(max_depth=14, n_estimators=500, random_state=42)
+RandomForestClassifier{'n_estimators': 119, 'max_depth': 26, 'min_samples_leaf': 2}
 
-Accuracy на тренировочной выборке: 0.822
+Accuracy на тренировочной выборке: 0.95
 
-Accuracy на тестовой выборке: 0.758
+Accuracy на тестовой выборке: 0.80
 
 :arrow_up: [к оглавнению] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
