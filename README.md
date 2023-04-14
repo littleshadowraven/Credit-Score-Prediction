@@ -3,6 +3,9 @@
 
 Ноутбук на kaggle размещен по сслыке https://www.kaggle.com/code/mia1610/credit-score-classification-randomforest
 
+## Ссылка на файлы, в том числе и на непоместившиеся:
+https://disk.yandex.ru/d/gCsyeHc1Z_10lQ
+
 ## Оглавление
 [1. Описание проекта] (https://github.com/littleshadowraven/Credit-Score-Prediction/edit/main/README.md#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 
