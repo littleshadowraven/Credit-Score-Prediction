@@ -87,9 +87,9 @@
 ### Результаты
 Результатом является оптимизации гиперпараметров RandomForestClassifier с помощью Optuna, лучшие результы показала следующая модель:
 
-RandomForestClassifier{'n_estimators': 119, 'max_depth': 26, 'min_samples_leaf': 2}
+RandomForestClassifier{'n_estimators': 181, 'max_depth': 30, 'min_samples_leaf': 2}
 
-Accuracy на тренировочной выборке: 0.95
+Accuracy на тренировочной выборке: 0.96
 
 Accuracy на тестовой выборке: 0.80
 
