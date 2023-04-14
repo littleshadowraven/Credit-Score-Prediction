@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Credit Score Class Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    
+    <input type="text" name="Outstanding_Debt" placeholder="Outstanding_Debt" required="required" />
+    <input type="text" name="Interest_Rate" placeholder="Interest_Rate" required="required" />
+    <input type="text" name="Credit_History_Age" placeholder="Credit_History_Age" required="required" />
+    <input type="text" name="Credit_Mix" placeholder="Credit_Mix" required="required" />
+    <input type="text" name="Delay_from_due_date" placeholder="Delay_from_due_date" required="required" />
+    <input type="text" name="Changed_Credit_Limit" placeholder="Changed_Credit_Limit" required="required" />
+    <input type="text" name="Credit_Utilization_Ratio" placeholder="Credit_Utilization_Ratio" required="required" />
+    <input type="text" name="Amount_invested_monthly" placeholder="Amount_invested_monthly" required="required" />
+    <input type="text" name="Num_of_Delayed_Payment" placeholder="Num_of_Delayed_Payment" required="required" />
+    <input type="text" name="Annual_Income" placeholder="Annual_Income" required="required" />
+    <input type="text" name="Num_Credit_Card" placeholder="Num_Credit_Card" required="required" />
+    <input type="text" name="Total_EMI_per_month" placeholder="Total_EMI_per_month" required="required" />
+    <input type="text" name="Num_Credit_Inquiries" placeholder="Num_Credit_Inquiries" required="required" />
+    <input type="text" name="Age" placeholder="Age" required="required" />
+    <input type="text" name="Num_Bank_Accounts" placeholder="Num_Bank_Accounts" required="required" />
+		<input type="text" name="Num_of_Loan" placeholder="Num_of_Loan" required="required" />
+    <input type="text" name="Payment_of_Min_Amount_Yes" placeholder="Payment_of_Min_Amount_Yes" required="required" />
+    <input type="text" name="Payment_of_Min_Amount_No" placeholder="Payment_of_Min_Amount_No" required="required" />
+		<input type="text" name="Payment_Behaviour_Value_Small" placeholder="Payment_Behaviour_Value_Small" required="required" />
+    <input type="text" name="Payment_Behaviour_Value_Medium" placeholder="Payment_Behaviour_Value_Medium" required="required" />
+    <input type="text" name="Payment_Behaviour_Value_Large" placeholder="Payment_Behaviour_Value_Large" required="required" />
+		<input type="text" name="Payment_Behaviour_Spent_High" placeholder="Payment_Behaviour_Spent_High" required="required" />
+    <input type="text" name="Payment_Behaviour_Spent_Low" placeholder="Payment_Behaviour_Spent_Low" required="required" />
+    <input type="text" name="Loan_Type_Auto_Loan" placeholder="Loan_Type_Auto_Loan" required="required" />
+    <input type="text" name="Loan_Type_Student_Loan" placeholder="Loan_Type_Student_Loan" required="required" />
+		<input type="text" name="Loan_Type_Debt_Consolidation_Loan" placeholder="Loan_Type_Debt_Consolidation_Loan" required="required" />
+    <input type="text" name="Loan_Type_Payday_Loan" placeholder="Loan_Type_Payday_Loan" required="required" />
+    <input type="text" name="Loan_Type_Personal_Loan" placeholder="Loan_Type_Personal_Loan" required="required" />
+    <input type="text" name="Loan_Type_Mortgage_Loan" placeholder="Loan_Type_Mortgage_Loan" required="required" />
+    <input type="text" name="Loan_Type_Credit-Builder_Loan" placeholder="Loan_Type_Credit-Builder_Loan" required="required" />
+    <input type="text" name="Loan_Type_Home_Equity_Loan" placeholder="Loan_Type_Home_Equity_Loan" required="required" />
+  	<input type="text" name="Payment_of_Min_Amount_NM" placeholder="Payment_of_Min_Amount_NM" required="required" />
+    <input type="text" name="Monthly_Balance" placeholder="Monthly_Balance" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
